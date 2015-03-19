@@ -1,0 +1,487 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"echo",
+				"echo	echo \"…\""
+			],
+			[
+				"KELAS",
+				"KELAS"
+			],
+			[
+				"N",
+				"NIP_PENGURUS"
+			],
+			[
+				"nip_",
+				"NIP_PENGURUS"
+			],
+			[
+				"result",
+				"result_validasi"
+			],
+			[
+				"PENGU",
+				"pengurus"
+			],
+			[
+				"mysqli_fect",
+				"mysqli_fetch_array"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php\nsession_start();\ninclude \"../koneksi/conn.php\";\n\n\nif (isset($_POST['login'])) {\n\n\n\n\n// FETCH DATA FROM INPUT FIELD\n$user = mysqli_real_escape_string($sqli, $_POST['id']);\n$pass = mysqli_real_escape_string($sqli, $_POST['passw']);\n\n  // CHECK ALL FIELD HAS BEEN FILLED UP\n\n\nif ($user && $pass) \n{\n  $juml=strlen($user);\n             if ($juml == 9) \n                {\n                   // QUERY FROM DATABASE\n                   $kueri = \"SELECT * FROM mahasiswa WHERE nim_mahasiswa='$user' and password = '$pass'\";\n                   $query = mysqli_query($sqli, $kueri);\n                   $a = mysqli_fetch_array ($query);\n                   $checkuser = mysqli_num_rows($query); \n\n                   // CHECK IF USERNAME EXIST ON DATABASE\n                   if($checkuser != 0) \n                       {\n                        $_SESSION['id'] = $a ['NIM_MAHASISWA'];\n                        $_SESSION['nama'] = $a ['NAMA_MAHASISWA'];\n                        $_SESSION['tipe'] = \"Mahasiswa\";\n                         echo '<META HTTP-EQUIV=\"Refresh\" content =\" 0; URL= ../user/index.php\">';\n                       }\n                      \n                }\n\n\n\n            else if ($juml == 15)\n                     {\n\n                        $kueri = \"SELECT * FROM dosen WHERE nip_dosen='$user' and password = '$pass'\";\n                        $query = mysqli_query($sqli, $kueri);\n                        $a = mysqli_fetch_array ($query);\n                        $checkuser = mysqli_num_rows($query); \n  \n                       // CHECK IF USERNAME EXIST ON DATABASE\n                       if($checkuser != 0) \n                           {\n                            $_SESSION['id'] = $a ['NIP_DOSEN'];\n                             $_SESSION['nama'] = $a ['NAMA_DOSEN']; \n                             $_SESSION['tipe'] = \"Dosen\";  \n                          } \n                         \n                          echo '<META HTTP-EQUIV=\"Refresh\" content =\" 0; URL= ../user/index.php\">';\n                     }\n\n\n\n\n\n\n           else \n           { \n           $kueri = \"SELECT * FROM pengurus WHERE nip_pengurus='$user' and password = '$pass'\";\n           $query = mysqli_query($sqli, $kueri);\n           $a = mysqli_fetch_array ($query);\n           $checkuser = mysqli_num_rows($query); \n          \n           // CHECK IF USERNAME EXIST ON DATABASE\n           if($checkuser != 0) \n           {\n            \n            $_SESSION['id'] = $a ['NIP_PENGURUS'];\n            $_SESSION['nama'] = $a ['NAMA_PENGURUS'];   \n            $_SESSION['tipe'] = \"Admin\";\n           }\n           echo '<META HTTP-EQUIV=\"Refresh\" content =\" 0; URL= ../admin/index.php\">';\n           }\n\n\n}\nelse\n\n {echo '<META HTTP-EQUIV=\"Refresh\" content =\" 0; URL= ../index.php\">';}\n}\n\n\n\n\n/*   // FETCHING PASSWORD IN DATABASE WHERE USERNAME COINCIDES\n  \n\n    // CHECK IF ENTERED PASSWORD MEETS THE USERNAME PASSWORD\n   if ($pass== $checkpass) {\n\n     // IF ALL OKAY SET SESSION\n    setcookie(\"id\", $a, time()+7200);\n    $_SESSION['user'] = $user;\n    $_SESSION['start'] = time();\n    $_SESSION['expire'] = $_SESSION['start'] + (60 * 60 * 60);\n    header(\"Location: \".$_SERVER['PHP_SELF']);\n    exit();\n   } else {\n\n     // SET VARIABLE THAT'LL SHOW IF USER PASSWORD IS INCORRECT\n    $error = \"Incorrect password!\";\n   }\n  }\n } else {\n\n  // SET VARIABLE IF ALL FIELD ARE NOT FILLED UP\n $error = \"Please enter a username and password.\";\n }\n}\n*/\n\n\n?>",
+			"file": "fungsi/fungsi.php",
+			"file_size": 3545,
+			"file_write_time": 130696094928609006,
+			"settings":
+			{
+				"buffer_size": 3426,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "awal/jadwal.php",
+			"settings":
+			{
+				"buffer_size": 6558,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "koneksi/conn.php",
+			"settings":
+			{
+				"buffer_size": 414,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"sublime",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 109.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/ruangkelas222",
+		"/C/wamp/www/ruangkelas222/admin",
+		"/C/wamp/www/ruangkelas222/admin/jadwal",
+		"/C/wamp/www/ruangkelas222/awal",
+		"/C/wamp/www/ruangkelas222/koneksi",
+		"/C/wamp/www/phpexcel7",
+		"/C/wamp/www/phpexcel7/koneksi"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/ruangkelas222/awal/jadwal.data.php",
+		"/C/wamp/www/tbel/test.php",
+		"/C/wamp/www/ruangkelas222/awal/jadwal.php",
+		"/C/wamp/www/ruangkelas222/index.php",
+		"/C/wamp/www/ruangkelas222/admin/mahasiswa/mahasiswa.data.php",
+		"/C/wamp/www/phpexcel7/upload.php",
+		"/C/wamp/www/phpexcel7/baca.php",
+		"/C/wamp/www/phpexcel7/index.php",
+		"/C/wamp/www/phpexcel7/koneksi/conn.php",
+		"/C/wamp/www/ruangkelas222/admin/jadwal/jadwal.upload.act.php",
+		"/C/wamp/www/phpexcel7/uploadcsv.php",
+		"/C/wamp/www/phpexcel7/upload1.php",
+		"/C/wamp/www/tbel/koneksilaporan.php",
+		"/C/wamp/www/tbel/index.php",
+		"/C/wamp/www/tbel/laporan.php",
+		"/C/wamp/www/ruangkelas222/user/jadwal/jadwal.data.php",
+		"/C/wamp/www/ruangkelas222/user/jadwal/jadwal.php",
+		"/H/login/awal/jadwal.php",
+		"/H/login/user/index.php",
+		"/C/wamp/www/ruangkelas222/admin/index.php",
+		"/C/wamp/www/ruangkelas222/user/index.php",
+		"/C/wamp/www/ruangkelas222/admin/jadwal/jadwal.export.act.php",
+		"/C/wamp/www/phpexcel7/csvproses.php",
+		"/C/wamp/www/phpexcel7/process.php",
+		"/G/wamp/www/phpexcel9/index.php",
+		"/C/wamp/www/ruangkelas222/phpexcel/PHPExcel.php",
+		"/C/wamp/www/ruangkelas222/js/user_jadwal.js",
+		"/G/wamp/www/phpexcel7/upload.php",
+		"/G/wamp/www/phpexcel7/upload1.php",
+		"/G/wamp/www/phpexcel7/process.php",
+		"/G/wamp/www/phpexcel6/index.php",
+		"/C/wamp/www/ruangkelas222/js/awal.js",
+		"/C/wamp/www/ruangkelas222/user/pinjam/coba2.php",
+		"/C/wamp/www/ruangkelas222/awal/jadwal.form.php",
+		"/C/wamp/www/ruangkelas222/user/jadwal/jadwal.export.act.php",
+		"/C/wamp/www/ruangkelas222/admin/jadwal/jadwal.php",
+		"/C/wamp/www/ruangkelas222/user/pinjam/pinjam.php",
+		"/C/wamp/www/ruangkelas222/fungsi/fungsi.php",
+		"/C/wamp/www/ruangkelas222/awal/jadwal.input.php",
+		"/C/wamp/www/ruangkelas222/awal/jadwal.export.act.php",
+		"/C/wamp/www/ruangkelas222/js/awal.js.js",
+		"/C/wamp/www/ruangkelas222/awal/export.php",
+		"/C/wamp/www/ruangkelas222/admin/pinjam/coba2.php",
+		"/C/wamp/www/ruangkelas222/admin/pinjam/pinjam.php",
+		"/C/wamp/www/ruangkelas222/admin/pinjam/pinjam.data.php",
+		"/C/wamp/www/ruangkelas222/fungsi/logout.php",
+		"/C/wamp/www/ruangkelas222/admin/akademik/akademik.php",
+		"/C/wamp/www/ruangkelas222/user/jadwal/test.php",
+		"/C/wamp/www/ruangkelas222/mahasiswa/index.php",
+		"/C/wamp/www/ruangkelas/mahasiswa/mahasiswa.input.php",
+		"/C/Users/user_jMp/AppData/Local/Temp/Rar$DIa0.652/user_form_view.php",
+		"/C/wamp/www/ruangkelas/js/aplikasi.js",
+		"/C/wamp/www/ruangkelas/mahasiswa/mahasiswa.data.php",
+		"/C/wamp/www/ruangkelas/mahasiswa/index.php",
+		"/C/wamp/www/ruangkelas/mahasiswa/mahasiswa.form.php",
+		"/C/Users/user_jMp/AppData/Local/Temp/Rar$DIa0.296/mahasiswa.data.php",
+		"/C/wamp/www/ruangkelas/dosen/index.php",
+		"/C/wamp/www/ruangkelas/admin/inputmatkul.php",
+		"/C/wamp/www/ruangkelas/dosen/mahasiswa.input.php",
+		"/C/wamp/www/ruangkelas/dosen/mahasiswa.form.php",
+		"/C/wamp/www/ruangkelas/dosen/mahasiswa.data.php",
+		"/C/Users/user_jMp/AppData/Local/Temp/Rar$DIa0.882/koneksi.php",
+		"/C/wamp/www/ruangkelas/admin/pengurus/mahasiswa.data.php",
+		"/C/wamp/www/ruangkelas/admin/pengurus/mahasiswa.input.php",
+		"/C/wamp/www/ruangkelas/admin/pengurus/mahasiswa.form.php",
+		"/C/wamp/www/ruangkelas/fungsi/fungsi.php",
+		"/C/wamp/www/ruangkelas/admin/pengurus/index.php",
+		"/C/wamp/www/ruangkelas/admin/pengurus/user_form_view.php",
+		"/C/wamp/www/ruangkelas/pengurus/user_form_insert.php",
+		"/C/wamp/www/ruangkelas/pengurus/user_act_insert.php",
+		"/C/Users/user_jMp/AppData/Local/Temp/Rar$DIa0.200/mahasiswa.data.php",
+		"/C/Users/user_jMp/AppData/Local/Temp/Rar$DIa0.195/index.php",
+		"/C/wamp/www/ruangkelas/pengurus/user_form_view.php",
+		"/C/Users/user_jMp/AppData/Local/Temp/Rar$DIa0.877/cari.php",
+		"/C/wamp/www/ruangkelas1/protected/config/console.php",
+		"/C/wamp/www/ruangkelas1/protected/config/main.php",
+		"/C/wamp/www/ruangkelas/index.php",
+		"/C/wamp/www/ruangkelas1/protected/models/Pengurus.php",
+		"/C/wamp/www/ruangkelas1/protected/views/layouts/main.php",
+		"/C/wamp/www/ruangkelas2/protected/views/layouts/main.php",
+		"/C/wamp/www/ruangkelas1/protected/views/site/contact.php",
+		"/C/wamp/www/ruangkelas/pengurus/user_act_search.php",
+		"/C/wamp/www/ruangkelas/koneksi/conn.php",
+		"/C/wamp/www/ruangkelas1/protected/views/layouts/column1.php",
+		"/C/wamp/www/ruangkelas1/protected/views/layouts/column2.php",
+		"/C/wamp/www/ruangkelas1/protected/views/pengurus/index.php",
+		"/C/wamp/www/mrkunesa/protected/config/main.php",
+		"/C/wamp/www/ruangkelas/pengurus/user_act_update.php",
+		"/C/wamp/www/ruangkelas/pengurus/user_form_update.php",
+		"/C/wamp/www/ruangkelas/fungsi/csvproses.php",
+		"/C/wamp/www/ruangkelas/admin/uploadcsv.php",
+		"/C/wamp/www/contohajax/function.php",
+		"/C/wamp/www/ruangkelas/pengurus/user_act_delete.php",
+		"/C/wamp/www/ruangkelas/mahasiswa/user_act_delete.php",
+		"/C/wamp/www/ruangkelas/mahasiswa/user_act_insert.php",
+		"/C/wamp/www/crud/user/user_form_view.php",
+		"/C/wamp/www/crud/inc/config.php",
+		"/C/wamp/www/ruangkelas/admin/index.php",
+		"/C/wamp/www/ruangkelas/admin/upload_csv.php",
+		"/C/wamp/www/ruangkelas/mahasiswa/user_form_insert.php",
+		"/E/sampel/sampel 2/Starter Template for Bootstrap.html",
+		"/C/wamp/www/ruangkelas/mahasiswa/user_form_update.php",
+		"/C/wamp/www/ruangkelas/mahasiswa/user_form_view.php",
+		"/C/wamp/www/ruangkelas/user/pesan_user.php",
+		"/C/wamp/www/ruangkelas/admin/mahasiswa/user_form_view.php",
+		"/C/wamp/www/ruangkelas/admin/manajemenuser.php",
+		"/C/wamp/www/contohajax/index.php",
+		"/C/wamp/www/contohajax/koneksi.php",
+		"/C/wamp/www/ruangkelas/admin/pesan_admin.php",
+		"/C/wamp/www/ruangkelas/admin/matkul_admin.php",
+		"/C/wamp/www/s/app/login.php",
+		"/C/wamp/www/s/index.php",
+		"/C/wamp/www/ruangkelas/js/npm.js",
+		"/C/wamp/www/ruangkelas/js/bootstrap.js",
+		"/C/wamp/www/ruangkelas/user/matkul_user.php",
+		"/C/wamp/www/contoh/config/config.php",
+		"/C/wamp/www/contoh/classes/Login.php",
+		"/C/wamp/www/ruangkelas/fungsi/logout.php",
+		"/C/wamp/www/contoh/main.php",
+		"/C/wamp/www/contoh/libs/function.core.php",
+		"/C/wamp/www/contoh/mainpage.php",
+		"/C/wamp/www/contoh/logout.php",
+		"/C/wamp/www/contoh/top.php",
+		"/C/wamp/www/contoh/index.php",
+		"/C/wamp/www/ruangkelas/admin/matkul_admin.html",
+		"/C/wamp/www/ruangkelas/user/pesan.php",
+		"/E/sampel/Theme Template for Bootstrap.html",
+		"/C/Users/user_jMp/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 116.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"test",
+			"1",
+			"export",
+			"cek_login",
+			"HALAMAN"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "fungsi/fungsi.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2755,
+								2755
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 851.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "awal/jadwal.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2311,
+								2311
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 606.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "koneksi/conn.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								414
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 272.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

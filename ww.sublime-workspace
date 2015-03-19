@@ -1,0 +1,628 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sq",
+				"sqlg"
+			],
+			[
+				"c",
+				"ce"
+			],
+			[
+				"ja",
+				"JAM"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "admin/pinjam/pinjam.input.php",
+			"settings":
+			{
+				"buffer_size": 1668,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/pinjam/pinjam.form.php",
+			"settings":
+			{
+				"buffer_size": 4880,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/pinjam/pinjam.data.php",
+			"settings":
+			{
+				"buffer_size": 2135,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/pinjam/coba2.php",
+			"settings":
+			{
+				"buffer_size": 6219,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/jadwal/jadwal.data.php",
+			"settings":
+			{
+				"buffer_size": 5888,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/jadwal/jadwal.input.php",
+			"settings":
+			{
+				"buffer_size": 2078,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/pinjam/pinjam.php",
+			"settings":
+			{
+				"buffer_size": 7692,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/pinjam.js",
+			"settings":
+			{
+				"buffer_size": 4978,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/jadwal.js",
+			"settings":
+			{
+				"buffer_size": 5517,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/jadwal/jadwal.php",
+			"settings":
+			{
+				"buffer_size": 8862,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/jadwal/jadwal.form.php",
+			"settings":
+			{
+				"buffer_size": 7590,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/ruangkelas22",
+		"/C/wamp/www/ruangkelas22/admin",
+		"/C/wamp/www/ruangkelas22/admin/pinjam",
+		"/C/wamp/www/ruangkelas22/js"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/ruangkelas22/admin/pinjam/coba2.php",
+		"/C/wamp/www/ruangkelas22/js/dosen.js",
+		"/C/wamp/www/ruangkelas22/admin/dosen/dosen.php",
+		"/C/wamp/www/ruangkelas22/admin/dosen/dosen.data.php",
+		"/C/wamp/www/ruangkelas22/admin/dosen/dosen.form.php",
+		"/C/wamp/www/ruangkelas22/admin/dosen/dosen.input.php",
+		"/C/wamp/www/ruangkelas22/admin/pinjam/pinjam.form.php",
+		"/C/wamp/www/ruangkelas22/admin/pinjam/pinjam.input.php",
+		"/C/wamp/www/ruangkelas22/js/jadwal.js",
+		"/C/wamp/www/ruangkelas22/js/ruangan.js",
+		"/C/wamp/www/ruangkelas22/admin/pinjam/pinjam.php",
+		"/C/wamp/www/ruangkelas22/admin/pinjam/pinjam.data.php",
+		"/C/wamp/www/ruangkelas22/js/pinjam.js",
+		"/C/wamp/www/ruangkelas22/coba.php",
+		"/C/wamp/www/ruangkelas22/coba2.php",
+		"/C/wamp/www/ruangkelas22/admin/gedung/gedung.php",
+		"/C/wamp/www/ruangkelas22/admin/jadwal/jadwal.php",
+		"/C/wamp/www/ruangkelas22/admin/lantai/lantai.input.php",
+		"/C/wamp/www/ruangkelas22/admin/ruangan/ruangan.php",
+		"/C/wamp/www/ruangkelas22/admin/ruangan/ruangan.input.php",
+		"/C/wamp/www/ruangkelas22/admin/ruangan/ruangan.form.php",
+		"/C/wamp/www/ruangkelas22/admin/ruangan/ruangan.data.php",
+		"/C/wamp/www/ruangkelas22/js/pengurus.js",
+		"/C/wamp/www/ruangkelas22/admin/pinjam/jadwal.php",
+		"/C/wamp/www/ruangkelas22/admin/pinjam/jadwal.input.php",
+		"/C/wamp/www/ruangkelas22/admin/pinjam/jadwal.form.php",
+		"/C/wamp/www/ruangkelas22/admin/pinjam/jadwal.data.php",
+		"/C/wamp/www/ruangkelas22/admin/mahasiswa/mahasiswa.input.php",
+		"/C/wamp/www/ruangkelas22/js/mahasiswa.js",
+		"/C/wamp/www/ruangkelas22/admin/mahasiswa/mahasiswa.form.php",
+		"/C/wamp/www/ruangkelas22/admin/mahasiswa/mahasiswa.data.php",
+		"/C/wamp/www/ruangkelas22/admin/jadwal/jadwal.upload.act.php",
+		"/C/wamp/www/ruangkelas22/admin/jadwal/jadwal.data.php",
+		"/C/wamp/www/ruangkelas22/admin/mahasiswa/mahasiswa.php",
+		"/C/wamp/www/ruangkelas22/admin/mengajar/mengajar.data.php",
+		"/C/wamp/www/ruangkelas22/admin/jadwal/jadwal.upload.php",
+		"/C/Users/memes/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pgr",
+			"jdwl",
+			"tamil",
+			"jadwal"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "admin/pinjam/pinjam.input.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "admin/pinjam/pinjam.form.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "admin/pinjam/pinjam.data.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								468,
+								468
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "admin/pinjam/coba2.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								364,
+								364
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "admin/jadwal/jadwal.data.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1399,
+								1399
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1036.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "admin/jadwal/jadwal.input.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2078,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 597.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "admin/pinjam/pinjam.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5510,
+								5510
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2175.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/pinjam.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								763,
+								763
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/jadwal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								349,
+								1310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 233.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "admin/jadwal/jadwal.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6470,
+								6634
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2607.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "admin/jadwal/jadwal.form.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2859.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ww.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
